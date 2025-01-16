@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Oct 2021 - Feb 2022",
+    title: "Ingeniero de Diseño y Desarrollo",
+    company: "TE Connectivity",
+    description:
+      "Participación en el diseño de un nuevo módulo para una máquina de ensamblaje en la planta, incluyendo la realización de piezas, ensamblajes y planos. Además del diseño de secciones del nuevo módulo, contribuyendo activamente en la optimización del proceso de ensamblaje.",
+    
+  },
+  {
+    date: "Ago 2021 - Dic 2021",
+    title: "Diseñador de Dispositivos Biomédicos",
+    company: "GSE Biomedical",
+    description:
+      "Contribución en el desarrollo de cuneros diseñados para optimizar el descanso de los recién nacidos, con un enfoque principal en el diseño y el control del dispositivo.",
+  },
+  {
+    date: "Jun 2019 - Ago 2019",
+    title: "Encargado de Diseño y Optimización de Prótesis",
+    company: "Fundación D'corazón",
+    description:
+      "Responsable del diseño, optimización e impresión en 3D de prótesis de presentación para mi universidad y la organización, presentadas con el fin de recaudar fondos.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
